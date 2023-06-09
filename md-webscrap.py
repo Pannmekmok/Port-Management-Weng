@@ -1,5 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
+import pandas as pd
+
 # from selenium import webdriver
 # from webdriver_manager.chrome import ChromeDriverManager
 # from selenium.webdriver.common.by import By
@@ -15,6 +17,10 @@ soup = BeautifulSoup(res.text, 'html.parser')
 data = soup.find_all('div', {'class': 'col-lg-6'})
 # print(data)
 
+port_list = []
+ship_list = []
+state_list = []
+
 for ele in data:
     head = ele.find_all('h6')
     name = ele.select('[id*="lblShipName"]')
@@ -23,9 +29,25 @@ for ele in data:
     for span in head:
         port = span.find('span')
         print(port.string)
+        port_name = port.string            
         for n, s in zip(name, state):
-            print(" -", n.string, "("+ s.string + ")")
-        print("-------------------------------")
+        #     print(" -", n.string, "("+ s.string + ")")
+            # if port_name not in port_list:
+            #     port_list.append(port_name)
+            
+            # elif port_name in port_list:
+            #     port_list.append('')
+            port_list.append(port_name)
+            ship_list.append(n.string)
+            state_list.append(s.string)
+        # print("-------------------------------")
+
+        
+df = pd.DataFrame({'Port': port_list, 'Ship': ship_list, 'State': state_list})
+
+# print(df.head)
+df.to_excel('data_table.xlsx')
+df.to_csv('data_table.csv')
 
 # ports = soup.find_all('h6')
 # print(ports)
