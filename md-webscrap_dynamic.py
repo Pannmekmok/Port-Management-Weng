@@ -56,7 +56,8 @@ def find_data_from_date(date_list):
                 select_year_button.send_keys(year)
                 
                 if date:
-                    date = wait.until(EC.element_to_be_clickable((By.XPATH,f"(//span[@aria-label='{convert_month[month]} {date}, {year}'])")))
+                    date_Name = f'{convert_month[month]} {date}, {year}'
+                    date = wait.until(EC.element_to_be_clickable((By.XPATH,f"(//span[@aria-label='{date_Name}'])")))
                     date.click()
                     
                     search = wait.until(EC.element_to_be_clickable((By.XPATH,'/html/body/form/main/div/div/div/div/div/div/div[1]/div/div[4]/div/a')))
@@ -73,18 +74,24 @@ def find_data_from_date(date_list):
             
     while True:
         try:
+            i = 0
             current_text = driver.find_element(By.XPATH, r"/html/body/form/main/div/div/div/div/div/div/div[2]/div/div[1]/div/div[2]/div/div/div/div/table/tbody/tr[2]/td[6]/span[1]").text
             if current_text != text_before:
                 break
+            
+            if i == 20:
+                break
+            # print(i)
+            i += 1
             
         except:
             break
     
     all_data = driver.page_source
     # print(all_data)
-    return all_data
+    return all_data, date_Name
 
-def get_data(all_data):
+def get_data(all_data, date):
     soup = BeautifulSoup(all_data, 'html.parser')
     data = soup.find_all('div', {'class': 'col-lg-6'})
     # print(data)
@@ -118,11 +125,11 @@ def get_data(all_data):
     df = pd.DataFrame({'Port': port_list, 'Ship': ship_list, 'State': state_list})
 
     # print(df.head)
-    df.to_excel('spacific_date_data_table.xlsx')
-    df.to_csv('spacific_date_data_table.csv')
+    df.to_excel(f'Collect_Data\{date}_data_table.xlsx')
+    df.to_csv(f'Collect_Data\{date}_data_table.csv')
 
     
 
     
-data = find_data_from_date(date_input)
-get_data(data)
+data, date = find_data_from_date(date_input)
+get_data(data, date)
