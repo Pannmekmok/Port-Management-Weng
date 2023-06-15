@@ -116,6 +116,11 @@ def get_data(all_data, date):
             port_name = port.string            
             for n, s in zip(name, state):
             #     print(" -", n.string, "("+ s.string + ")")
+                # if port_name not in port_list:
+                #     port_list.append(port_name)
+                
+                # elif port_name in port_list:
+                #     port_list.append('')
                 port_list.append(port_name)
                 ship_list.append(n.string)
                 state_list.append(s.string)
