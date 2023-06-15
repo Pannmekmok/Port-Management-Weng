@@ -1,0 +1,121 @@
+,Port,Ship,State
+0,THBKK/BK18A (- ),B.P.P. 28,Arrival
+1,THBKK/BK18A (- ),BIG SEA 101,Arrival
+2,THBKK/BK18A (- ),B.P.P. 28,Arrival
+3,THBKK/BK18C (- ),SMOOTH SEA 17,Arrival
+4,THBKK/BK18D (- ),YC CLOVER,Arrival
+5,THBKK/BK18D (- ),YC CLOVER,Arrival
+6,THBKK/BK18D (- ),V.L. 24,Arrival
+7,THBKK/BK18G (- ),B.P.P. 202,Arrival
+8,THBKK/BK18G (- ),SIRITHANA,Arrival
+9,THBKK/BK20B (ท่าหมายเลข 20 B ),SONGA PANTHER,Arrival
+10,THBKK/BK20B (ท่าหมายเลข 20 B ),SKY ORION,Arrival
+11,THBKK/BK20B (ท่าหมายเลข 20 B ),SKY ORION,Arrival
+12,THBKK/BK20E (ท่าหมายเลข 20 E ),KOTA HANDAL,Arrival
+13,THBKK/BK20E (ท่าหมายเลข 20 E ),KOTA HANDAL,Arrival
+14,THBKK/BK21B (- ),QUANG MINH 29,Arrival
+15,THBKK/BK22A (ท่าหมายเลข 22 A ),SITC GUANGDONG,Arrival
+16,THBKK/BK22E (ท่าหมายเลข 22 E ),TAN BINH 129,Arrival
+17,THBKK/BK22E (ท่าหมายเลข 22 E ),SEA VICTORY,Arrival
+18,THBKK/BK22H (ท่าหมายเลข 22 H ),NORD HAKATA,Arrival
+19,THBKK/BK30B (- ),PATCHARAWADEE 14,Arrival
+20,THBKK/BKK10 (- ),KMTC POHANG,Arrival
+21,THBKK/BKK13 (บ.น้ำมันไออาร์พีซี จำกัด (ท่า ๑๓) ),BIG SEA 14,Arrival
+22,THBKK/BKK2F (- ),STARSHIP PEGASUS,Arrival
+23,THBKK/BKK2F (- ),SAWASDEE SIRIUS,Arrival
+24,THBKK/BKK2F (- ),PANCON BRIDGE,Arrival
+25,THBKK/BKSB1 (ทุ่นผูกเรือสาธุประดิษฐ์ (B1) ),OCEAN SHUTTEL,Arrival
+26,THBKK/BKSLW (ปตท. สลิปเวย์ 1 ),PILATUS 44,Arrival
+27,THBKK/BKSLW (ปตท. สลิปเวย์ 1 ),PILATUS 56,Arrival
+28,THBKK/BKSLW (ปตท. สลิปเวย์ 1 ),Pilatus46,Arrival
+29,THBPK/BGP05 (ท่าเทียบเรือ บริษัท ยูนิคแก๊ส แอนด์ ปิโตร เคมีคัลส์ จำกัด (มหาชน) ),PATCHARAWADEE 10,Arrival
+30,THBPK/BGP06 (ท่าเทียบเรือ บริษัท เวิลด์ แอล.พี.จี. กรุ๊ป จำกัด ),PILATUS 21,Arrival
+31,THBPK/BGP06 (ท่าเทียบเรือ บริษัท เวิลด์ แอล.พี.จี. กรุ๊ป จำกัด ),Pilatus 54,Arrival
+32,THBPK/BGP08 (ท่าเทียบเรือบริษัท ไอพี 5 จำกัด ),TB. MACALLAN 15,Arrival
+33,THBPK/BGP08 (ท่าเทียบเรือบริษัท ไอพี 5 จำกัด ),BG. CERTAN,Arrival
+34,THHIP/SAT04 (ท่าเรือพาณิชย์สัตหีบ (จุกเสม็ด) ท่า 4 ),OFFSHORE SOLUTION,Arrival
+35,THKSI/KOHAF (KOHSICHANG AREA F ),SLOMAN THEMIS,Arrival
+36,THKSI/KOHAG (KOHSICHANG AREA G ),RAYONG CHEMI,Arrival
+37,THKSI/KOHAG (KOHSICHANG AREA G ),EAGLE SENA,Arrival
+38,THLCH/LCBA0 (LAEMCHABANG A 0 ),KMTC ULSAN,Arrival
+39,THLCH/LCBA0 (LAEMCHABANG A 0 ),SKY ORION,Arrival
+40,THLCH/LCBA0 (LAEMCHABANG A 0 ),KMTC TOKYO,Arrival
+41,THLCH/LCBA0 (LAEMCHABANG A 0 ),DONGJIN CONFIDENT,Depature
+42,THLCH/LCBA0 (LAEMCHABANG A 0 ),KMTC TOKYO,Depature
+43,THLCH/LCBA0 (LAEMCHABANG A 0 ),STARSHIP PEGASUS,Arrival
+44,THLCH/LCBA0 (LAEMCHABANG A 0 ),DONGJIN CONFIDENT,Arrival
+45,THLCH/LCBA0 (LAEMCHABANG A 0 ),KMTC TOKYO,Depature
+46,THLCH/LCBA0 (LAEMCHABANG A 0 ),DONGJIN CONFIDENT,Arrival
+47,THLCH/LCBA0 (LAEMCHABANG A 0 ),KMTC ULSAN,Depature
+48,THLCH/LCBA0 (LAEMCHABANG A 0 ),STARSHIP PEGASUS,Arrival
+49,THLCH/LCBA0 (LAEMCHABANG A 0 ),DONGJIN CONFIDENT,Depature
+50,THLCH/LCBA2 (LAEMCHABANG A 2 ),TOKYO TOWER,Arrival
+51,THLCH/LCBA2 (LAEMCHABANG A 2 ),CAP ANDREAS,Arrival
+52,THLCH/LCBAC (Laemchabang anchorage ),F S 9,Arrival
+53,THLCH/LCBB3 (ท่าเทียบเรืออเนกประสงค์ B 3 ),XIN MING ZHOU 98,Arrival
+54,THLCH/LCBB3 (ท่าเทียบเรืออเนกประสงค์ B 3 ),GREEN HOPE,Depature
+55,THLCH/LCBB3 (ท่าเทียบเรืออเนกประสงค์ B 3 ),INTERASIA FORWARD,Arrival
+56,THLCH/LCBB3 (ท่าเทียบเรืออเนกประสงค์ B 3 ),INTERASIA FORWARD,Depature
+57,THLCH/LCBB3 (ท่าเทียบเรืออเนกประสงค์ B 3 ),XIN MING ZHOU 98,Depature
+58,THLCH/LCBB3 (ท่าเทียบเรืออเนกประสงค์ B 3 ),TS TIANJIN,Arrival
+59,THLCH/LCBB3 (ท่าเทียบเรืออเนกประสงค์ B 3 ),XIN MING ZHOU 98,Arrival
+60,THLCH/LCBB3 (ท่าเทียบเรืออเนกประสงค์ B 3 ),TS TIANJIN,Arrival
+61,THLCH/LCBB4 (ท่าเทียบเรืออเนกประสงค์ B 4 ),KAMA BHUM,Arrival
+62,THLCH/LCBB4 (ท่าเทียบเรืออเนกประสงค์ B 4 ),SONGA PANTHER,Depature
+63,THLCH/LCBB4 (ท่าเทียบเรืออเนกประสงค์ B 4 ),LADY OF LUCK,Arrival
+64,THLCH/LCBB4 (ท่าเทียบเรืออเนกประสงค์ B 4 ),SONGA PANTHER,Depature
+65,THLCH/LCBB5 (LAEMCHABANG B 5 ),SITC GUANGDONG,Arrival
+66,THLCH/LCBB5 (LAEMCHABANG B 5 ),NORDLEOPARD,Arrival
+67,THLCH/LCBB5 (LAEMCHABANG B 5 ),SAWASDEE SIRIUS,Arrival
+68,THLCH/LCBB5 (LAEMCHABANG B 5 ),CNC VENUS,Arrival
+69,THLCH/LCBB5 (LAEMCHABANG B 5 ),CNC VENUS,Depature
+70,THLCH/LCBB5 (LAEMCHABANG B 5 ),NP LOVEGISTICS 2,Arrival
+71,THLCH/LCBB5 (LAEMCHABANG B 5 ),MILLENNIUM BRIGHT,Arrival
+72,THLCH/LCBB5 (LAEMCHABANG B 5 ),CNC VENUS,Arrival
+73,THLCH/LCBC0 (LAEMCHABANG C 0 ),MARIANNE DANICA,Arrival
+74,THLCH/LCBC0 (LAEMCHABANG C 0 ),MARIANNE DANICA,Arrival
+75,THLCH/LCBC0 (LAEMCHABANG C 0 ),MARIANNE DANICA,Depature
+76,THLCH/LCBC0 (LAEMCHABANG C 0 ),MARIANNE DANICA,Arrival
+77,THLCH/LCBC0 (LAEMCHABANG C 0 ),MARIANNE DANICA,Depature
+78,THLCH/LCBC1 (LAEMCHABANG C 1 ),NP CHUMPHON,Arrival
+79,THLCH/LCBC1 (LAEMCHABANG C 1 ),PINNCHAREON 2,Arrival
+80,THLCH/LCBC1 (LAEMCHABANG C 1 ),LERT PHRAWWILAI,Arrival
+81,THLCH/LCBC1 (LAEMCHABANG C 1 ),MARINA ONE,Arrival
+82,THLCH/LCBC1 (LAEMCHABANG C 1 ),MARINA ONE,Arrival
+83,THLCH/LCBC2 (LAEMCHABANG C 2 ),MSC SOPHIE,Depature
+84,THLCH/LCBD1 (ท่าเทียบเรือบริษัท ฮัทชิสัน แหลมฉบัง เทอร์มินัล จำกัด ),ONE GRUS,Arrival
+85,THLCH/LCBD1 (ท่าเทียบเรือบริษัท ฮัทชิสัน แหลมฉบัง เทอร์มินัล จำกัด ),ONE GRUS,Arrival
+86,THLCH/LCBD1 (ท่าเทียบเรือบริษัท ฮัทชิสัน แหลมฉบัง เทอร์มินัล จำกัด ),ONE MEISHAN,Arrival
+87,THLCH/LCPA1 (ท่าเทียบเรือชายฝั่ง A หมายเลข 1 (LCBPA1) ),NP SAMUTSONGKHRAM,Arrival
+88,THMAT/MTT04 (ท่าเทียบเรือ MTT - 4 (ท่าเทียบเรือหมายเลข 4) ),EAGLE ASIA 08,Arrival
+89,THMAT/PGCE2 (ท่าเทียบเรือ PTTGC-E2 (ท่าเทียบเรือทิศตะวันออกหมายเลข 2) ),BIG SEA 104,Arrival
+90,THMAT/PGCE2 (ท่าเทียบเรือ PTTGC-E2 (ท่าเทียบเรือทิศตะวันออกหมายเลข 2) ),GT VICTORY,Arrival
+91,THMAT/PGCW1 (ท่าเทียบเรือ PTTGC-W1 (ท่าเทียบเรือทิศตะวันตกหมายเลข 1) ),PHUBAI NADDA 1,Arrival
+92,THMAT/PTLN2 (ท่าเทียบเรือ PTT LNG 2 (มาบตาพุด แอลเอ็นจี หมายเลข 2) ),PUTERI FIRUS SATU,Arrival
+93,THMAT/TANK1 (ท่าเรือ PTT-TANK ท่าหมายเลข ๑ ),NP BANGPAKONG,Depature
+94,THMAT/TANK1 (ท่าเรือ PTT-TANK ท่าหมายเลข ๑ ),NP BANGPAKONG,Arrival
+95,THMAT/THRTC (ท่าเรือ RTC ),COUGAR,Depature
+96,THMAT/THRTC (ท่าเรือ RTC ),COUGAR,Arrival
+97,THMAT/TPT02 (ท่าเรือ TPT2 ),AJISAI,Arrival
+98,THMAT/TTT02 (ท่าเรือ TTT ท่าหมายเลข ๒ ),GREAT WALRUS,Arrival
+99,THPKT/HKT01 (ท่าเรือน้ำลึกภูเก็ต ),BATIS,Arrival
+100,THPNA/AYT19 (บริษัท ไอ อาร์ พี ซี จำกัด ),RAKPASAK 2,Arrival
+101,THRYG/IRPC2 (ท่าเทียบเรือ ไออาร์พีซี เทอร์มินัล 2 บี ),YOU SHEN 1,Arrival
+102,THRYG/IRPC3 (ท่าเทียบเรือ ไออาร์พีซี เทอร์มินัล 3 ),INDIGO RAY,Arrival
+103,THSGK/SGS09 (ท่าเรือคลังปิโตเลี่ยม 01 ),PP 7,Arrival
+104,THSGK/SGS10 (ท่าเรือคลังปิโตเลี่ยม 02 ),SRI PHUNPIN,Arrival
+105,THSGK/SGZ03 (ท่าเรือเชลล์ สงขลา ),SRI TAH CHANA,Arrival
+106,THSGK/SGZ03 (ท่าเรือเชลล์ สงขลา ),V.L.22,Arrival
+107,THSNT/STL01 (ท่าเทียบเรือท่องเที่ยวและอเนกประสงค์ปากบารา (ท่าเรือโดยสาร) ),ORCA OKTAVIA,Arrival
+108,THSRI/KSP10 (KERRY SIAM SEAPORT NO. 10 ),INCEDA,Arrival
+109,THSRI/KSP10 (KERRY SIAM SEAPORT NO. 10 ),MTT SEMPORNA,Arrival
+110,THSRI/KSP10 (KERRY SIAM SEAPORT NO. 10 ),MTT SEMPORNA,Depature
+111,THSRI/THAUD (AO-U-DOM ),VAREEWAN,Arrival
+112,THSRI/TOIL3 (THAI OIL JETTY NO. 3 ),ANANTANASIN,Arrival
+113,THSRI/TOIL4 (THAI OIL JETTY NO. 4 ),PHUBAI  PATTRA 1,Arrival
+114,THSRI/TOIL4 (THAI OIL JETTY NO. 4 ),SIRI PIPAT,Arrival
+115,THSRI/TOIL6 (THAI OIL JETTY NO. 6 ),LAPIS,Arrival
+116,THSRI/TSBM1 (THAI OIL SBM 1 ),EAGLE KINARUT,Arrival
+117,THURT/SNM18 (บริษัท เอ็น พี มารีน จำกัด ),NP RATCHABURI,Arrival
+118,THURT/SNM18 (บริษัท เอ็น พี มารีน จำกัด ),NP SURATTHANI 2,Arrival
+119,THURT/SNM21 (บริษัท สุราษฎร์พอร์ทแอนด์เทอร์มินอล จำกัด ),HARI BHUM,Arrival

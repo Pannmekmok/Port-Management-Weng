@@ -5,9 +5,12 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support.ui import WebDriverWait 
 from selenium.webdriver.support import expected_conditions as EC
 import pandas as pd
+import mysql.connector
+import csv
 
 url = "https://nsw.md.go.th/msberthmanagement/PublicBerthStatus.aspx"
 date_input = input('Put your in put here format dd/mm/yyyy: ').split('/')
+table_name = f'{int(date_input[0])}, {int(date_input[1])}, {int(date_input[2])}'
 # date_input = '01/01/2023'.split('/')
 
 convert_month = {1 : 'มกราคม',
@@ -46,6 +49,7 @@ def find_data_from_date(date_list):
         month = int(date_list[1])
         year = int(date_list[2])
         print(date, month, year)
+        
         if month in range(1, 12):
             select_month_button = driver.find_element(By.XPATH, f'/html/body/div/div[1]/div/div/select/option[{month}]')
             select_month_button.click()
@@ -73,8 +77,9 @@ def find_data_from_date(date_list):
             print('Error month of range')
             
     while True:
+        i = 0
         try:
-            i = 0
+            
             current_text = driver.find_element(By.XPATH, r"/html/body/form/main/div/div/div/div/div/div/div[2]/div/div[1]/div/div[2]/div/div/div/div/table/tbody/tr[2]/td[6]/span[1]").text
             if current_text != text_before:
                 break
@@ -125,11 +130,11 @@ def get_data(all_data, date):
     df = pd.DataFrame({'Port': port_list, 'Ship': ship_list, 'State': state_list})
 
     # print(df.head)
-    df.to_excel(f'Collect_Data\{date}_data_table.xlsx')
-    df.to_csv(f'Collect_Data\{date}_data_table.csv')
-
+    df.to_excel(f'Collect_Data\{date}_data_table.xlsx', index=False)
+    df.to_csv(f'Collect_Data\{date}_data_table.csv', index=False)
     
+    return port_list, ship_list, state_list    
 
     
 data, date = find_data_from_date(date_input)
-get_data(data, date)
+port_list, ship_list, state_list= get_data(data, date)
