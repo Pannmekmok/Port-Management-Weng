@@ -1,0 +1,21 @@
+{
+  "name": "port-management-weng",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Sync-API.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "Sync-API.js",
+    "dev": "nodemon Sync-API.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "lodash": "^4.17.21",
+    "mysql2": "^3.3.5",
+    "uuid": "^9.0.0"
+  }
+}
