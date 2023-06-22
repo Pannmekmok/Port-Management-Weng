@@ -57,80 +57,81 @@ app.get('/all-table', async (req, res) => {
     }
   });
 
-app.get('/all-data', async (req, res) => {
-    try {
-        const tableNames = await getTableNames();
-        const allData = {};
+app.get('/data/:date', async (req, res) => {
+  const date = req.params;
+  try {
+    const allData = {};
+    console.log(date);
+    const data = await getDataFromDate(date);
+    const tableName = 'table_' + date.date
+    allData[tableName] = data;
 
-        for (const tableName of tableNames) {
-            const data = await getAllDataFromTable(tableName);
-            allData[tableName] = data;
-        }
-
-        res.send(allData);
-
-    } catch (err) {
-        console.log('Error retrieving data:', err);
-        res.status(500).send('Internal Server Error');
-    }
-  });
-
-  async function getTableNames() {
-    const query = 'SHOW TABLES';
-    try {
-      const result = await queryPromise(query);
-      console.log(result);
-  
-      if (Array.isArray(result)) {
-        const tableNames = result.map(row => {
-          const values = Object.values(row);
-          return values.length > 0 ? values[0] : null;
-        });
-        console.log(tableNames);
-        return tableNames.filter(tableName => tableName !== null);
-      } else if (typeof result === 'object') {
-        const tableNames = Object.values(result).filter(tableName => tableName !== null);
-        console.log(tableNames);
-        return tableNames;
-      } else {
-        console.error('Error retrieving table names:', result);
-        throw new Error('Failed to retrieve table names');
-      }
-    } catch (err) {
-      console.error('Error executing query:', err);
-      throw err;
-    }
+    res.send(allData);
+  } catch (err) {
+    console.log('Error retrieving data:', err);
+    res.status(500).send('Internal Server Error');
   }
-  
-  async function getAllDataFromTable(tableName) {
-    const query = `SELECT * FROM ${tableName}`;
-    const rows = await queryPromise(query);
-    return rows;
-  }
+});
 
-  async function getDatabaseNames() {
-    const query = 'SHOW DATABASES';
-    try {
-      const result = await queryPromise(query);
-      console.log(result);
-  
-      if (Array.isArray(result)) {
-        const databaseNames = result.map(row => {
-          const values = Object.values(row);
-          return values.length > 0 ? values[0] : null;
-        });
-        console.log(databaseNames);
-        return databaseNames.filter(dbName => dbName !== null);
-      } else if (typeof result === 'object') {
-        const databaseNames = Object.values(result).filter(dbName => dbName !== null);
-        console.log(databaseNames);
-        return databaseNames;
-      } else {
-        console.error('Error retrieving database names:', result);
-        throw new Error('Failed to retrieve database names');
-      }
-    } catch (err) {
-      console.error('Error executing query:', err);
-      throw err;
+async function getTableNames() {
+  const query = 'SHOW TABLES';
+  try {
+    const result = await queryPromise(query);
+    console.log(result);
+
+    if (Array.isArray(result)) {
+      const tableNames = result.map(row => {
+        const values = Object.values(row);
+        return values.length > 0 ? values[0] : null;
+      });
+      console.log(tableNames);
+      return tableNames.filter(tableName => tableName !== null);
+    } else if (typeof result === 'object') {
+      const tableNames = Object.values(result).filter(tableName => tableName !== null);
+      console.log(tableNames);
+      return tableNames;
+    } else {
+      console.error('Error retrieving table names:', result);
+      throw new Error('Failed to retrieve table names');
     }
+  } catch (err) {
+    console.error('Error executing query:', err);
+    throw err;
   }
+}
+
+async function getDataFromDate(date) {
+  const query = 'SELECT * FROM table_' + date.date;
+  // const query = 'SELECT * FROM TestDB.' + 'Testtable';
+  // console.log(query);
+  const rows = await queryPromise(query);
+  console.log(rows);
+  return rows;
+}
+
+async function getDatabaseNames() {
+  const query = 'SHOW DATABASES';
+  try {
+    const result = await queryPromise(query);
+    console.log(result);
+
+    if (Array.isArray(result)) {
+      const databaseNames = result.map(row => {
+        const values = Object.values(row);
+        return values.length > 0 ? values[0] : null;
+      });
+      console.log(databaseNames);
+      return databaseNames.filter(dbName => dbName !== null);
+    } else if (typeof result === 'object') {
+      const databaseNames = Object.values(result).filter(dbName => dbName !== null);
+      console.log(databaseNames);
+      return databaseNames;
+    } else {
+      console.error('Error retrieving database names:', result);
+      throw new Error('Failed to retrieve database names');
+    }
+  } catch (err) {
+    console.error('Error executing query:', err);
+    throw err;
+  }
+}
